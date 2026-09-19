@@ -1,0 +1,29 @@
+name: Feature request
+description: Suggest something the app should do.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: Describe the situation rather than the solution — it often has more than one.
+      placeholder: I want to know I'm near my Claude weekly limit without opening the app.
+    validations:
+      required: true
+
+  - type: textarea
+    id: idea
+    attributes:
+      label: What did you have in mind?
+      description: Optional. If you already have a shape in mind, describe it.
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS
+        - iOS
+        - Both
+    validations:
+      required: true

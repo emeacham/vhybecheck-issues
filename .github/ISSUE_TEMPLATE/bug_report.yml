@@ -1,0 +1,60 @@
+name: Bug report
+description: Something in the app is wrong, missing, or misleading.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. If you got here from the app's **Report a bug**
+        button, most of this is already filled in — describe what went wrong and press
+        Create.
+
+  - type: dropdown
+    id: provider
+    attributes:
+      label: Provider
+      description: Which service is affected?
+      options:
+        - Claude
+        - Copilot
+        - Cursor
+        - ChatGPT
+        - More than one
+        - Not provider-specific
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: What did you see? If a number looked wrong, say what it showed and what you expected.
+      placeholder: The ChatGPT tile said "Free" but I'm on the Pro plan.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the menu bar icon
+        2. Click the ChatGPT tab
+        3. …
+
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics
+      description: |
+        Filled in automatically by the app's Report a bug button. Edit or delete any of
+        it — it never contains your email, account name, tokens or cookies.
+      render: text
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before you post
+      options:
+        - label: I've checked this isn't already reported in [open issues](../../issues).
+        - label: I've removed anything from this report I'd rather not make public.
