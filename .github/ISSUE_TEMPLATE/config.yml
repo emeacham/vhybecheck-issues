@@ -1,5 +1,8 @@
 blank_issues_enabled: false
 contact_links:
+  - name: Get help with the app
+    url: https://vhybecheck.app/#support
+    about: Email support@goldshorts.com for help with vhybecheck.
   - name: Download the app
     url: https://vhybecheck.app
     about: Get the latest version — your problem may already be fixed.

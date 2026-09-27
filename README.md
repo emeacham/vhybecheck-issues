@@ -7,6 +7,7 @@ across Claude, GitHub Copilot, Cursor and ChatGPT.
 This repository holds no code. It exists so that anyone using the app can file
 a report without needing access to the private source repository.
 
+- **[Email support@goldshorts.com](mailto:support@goldshorts.com)** for help with the app
 - **[Report a bug](../../issues/new?template=bug_report.yml)**
 - **[Request a feature](../../issues/new?template=feature_request.yml)**
 - **[Browse known issues](../../issues)**
